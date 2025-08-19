@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>prabhat 2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhat Neon & LED Sign</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-main">Prabhat</span>
+                <span class="logo-sub">Neon & LED Sign</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="company-name">Prabhat Neon & LED Sign</h1>
+    <p class="slogan">Lighting Up Your Brand Since the 1970s</p>
+  </div>
+</section>
+
+
+
+    <!-- ABOUT US -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <span class="since">Since the 1970s</span>
+            <p>
+                At <strong>Prabhat Neon & LED Sign</strong>, we have been crafting
+                eye-catching, high-quality signage for businesses for over five decades.
+                From classic neon styles to cutting-edge LED designs, we create sign boards
+                that bring your brand to life and make you stand out — day and night.
+            </p>
+            <p>
+                Our expert team combines skilled craftsmanship with the latest
+                technology to ensure every sign we produce is durable, vibrant,
+                and perfectly tailored to your needs.
+            </p>
+        </div>
+    </section>
+
+<!-- OUR PROJECTS SECTION -->
+<!-- OUR PROJECTS — 3 visible, one-per-click, all 40 images -->
+<section id="our-projects" style="background-color:#0d1b2a; padding:50px 0; color:white; text-align:center;">
+  <h2 style="font-size:2.5rem; margin-bottom:30px; font-weight:bold; letter-spacing:2px;">Our Projects</h2>
+
+  <style>
+    /* Scoped to this section */
+    #our-projects { --gap: 20px; }
+
+    #our-projects .rail {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Scroll viewport */
+    #our-projects .track {
+      display: flex;
+      gap: var(--gap);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;             /* Firefox */
+      -ms-overflow-style: none;          /* IE/Edge legacy */
+      padding: 0;                         /* no side padding so cards align flush */
+    }
+    #our-projects .track::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+
+    /* Cards: exactly 3 across (no halves) */
+    #our-projects .project-item {
+      flex: 0 0 calc((100% - 2 * var(--gap)) / 3); /* 3 per view */
+      border-radius: 10px;
+      overflow: hidden;
+      background: #17324a;
+      scroll-snap-align: start;
+      box-shadow: 0 4px 14px rgba(0,0,0,.25);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    #our-projects .project-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,.35);
+    }
+    #our-projects .project-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Arrows */
+    #our-projects .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px; height: 44px;
+      border-radius: 999px;
+      border: none;
+      background: rgba(255,255,255,.15);
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      backdrop-filter: blur(4px);
+      transition: background .2s ease, opacity .2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+    #our-projects .arrow:hover { background: rgba(255,255,255,.28); }
+    #our-projects .arrow:disabled { opacity: .35; cursor: default; }
+    #our-projects .arrow.left  { left: -8px; }
+    #our-projects .arrow.right { right: -8px; }
+
+    /* Responsive fallback: 2 per view under 900px, 1 per view under 580px */
+    @media (max-width: 900px) {
+      #our-projects .project-item { flex-basis: calc((100% - var(--gap)) / 2); }
+    }
+    @media (max-width: 580px) {
+      #our-projects .project-item { flex-basis: 100%; }
+      #our-projects .project-item img { height: 220px; }
+    }
+  </style>
+
+  <div class="rail">
+    <button class="arrow left"  aria-label="Scroll left">&#10094;</button>
+
+    <div class="track" id="projectsTrack">
+      <!-- 1–8 -->
+      <a class="project-item" href="https://ibb.co/zyvHQyF" target="_blank">
+        <img src="https://i.ibb.co/rCrfFC3/Whats-App-Image-2025-08-12-at-10-33-48-PM-1.jpg" alt="Project 1">
+      </a>
+      <a class="project-item" href="https://ibb.co/7JCDx0sc" target="_blank">
+        <img src="https://i.ibb.co/gM98bck1/Whats-App-Image-2025-08-12-at-10-33-48-PM.jpg" alt="Project 2">
+      </a>
+      <a class="project-item" href="https://ibb.co/vC3tGCmJ" target="_blank">
+        <img src="https://i.ibb.co/7xn95xVG/Whats-App-Image-2025-08-12-at-10-33-49-PM-1.jpg" alt="Project 3">
+      </a>
+      <a class="project-item" href="https://ibb.co/cX86fHdZ" target="_blank">
+        <img src="https://i.ibb.co/0V9C4S36/Whats-App-Image-2025-08-12-at-10-33-49-PM-2.jpg" alt="Project 4">
+      </a>
+      <a class="project-item" href="https://ibb.co/YBxjL5d5" target="_blank">
+        <img src="https://i.ibb.co/v4SzjNdN/Whats-App-Image-2025-08-12-at-10-33-49-PM.jpg" alt="Project 5">
+      </a>
+      <a class="project-item" href="https://ibb.co/p6mjSVyJ" target="_blank">
+        <img src="https://i.ibb.co/9mMH7Kts/Whats-App-Image-2025-08-12-at-10-33-50-PM-1.jpg" alt="Project 6">
+      </a>
+      <a class="project-item" href="https://ibb.co/7xGcMtN0" target="_blank">
+        <img src="https://i.ibb.co/mrHsZ5FP/Whats-App-Image-2025-08-12-at-10-33-50-PM-2.jpg" alt="Project 7">
+      </a>
+      <a class="project-item" href="https://ibb.co/gLmyw2JC" target="_blank">
+        <img src="https://i.ibb.co/8LNM2C9V/Whats-App-Image-2025-08-12-at-10-33-50-PM.jpg" alt="Project 8">
+      </a>
+
+      <!-- 9–40 -->
+      <a class="project-item" href="https://ibb.co/yBmTZRyN" target="_blank">
+        <img src="https://i.ibb.co/0VpN6XMn/Whats-App-Image-2025-08-14-at-12-40-23-PM-1.jpg" alt="Project 9">
+      </a>
+      <a class="project-item" href="https://ibb.co/M5BbPjNs" target="_blank">
+        <img src="https://i.ibb.co/R4j1QMH9/Whats-App-Image-2025-08-14-at-12-40-23-PM.jpg" alt="Project 10">
+      </a>
+      <a class="project-item" href="https://ibb.co/qF0MWsxQ" target="_blank">
+        <img src="https://i.ibb.co/3YfyMNkZ/Whats-App-Image-2025-08-14-at-12-40-24-PM-1.jpg" alt="Project 11">
+      </a>
+      <a class="project-item" href="https://ibb.co/XZW1WVK6" target="_blank">
+        <img src="https://i.ibb.co/svgngtNc/Whats-App-Image-2025-08-14-at-12-40-24-PM-2.jpg" alt="Project 12">
+      </a>
+      <a class="project-item" href="https://ibb.co/pBPpJhjk" target="_blank">
+        <img src="https://i.ibb.co/VcN82wYk/Whats-App-Image-2025-08-14-at-12-40-24-PM.jpg" alt="Project 13">
+      </a>
+      <a class="project-item" href="https://ibb.co/dsWPpqSC" target="_blank">
+        <img src="https://i.ibb.co/LDkxgWMj/Whats-App-Image-2025-08-14-at-12-40-25-PM-1.jpg" alt="Project 14">
+      </a>
+      <a class="project-item" href="https://ibb.co/HD2GrK0Q" target="_blank">
+        <img src="https://i.ibb.co/276cjFwB/Whats-App-Image-2025-08-14-at-12-40-25-PM-2.jpg" alt="Project 15">
+      </a>
+      <a class="project-item" href="https://ibb.co/3mHCJ5gF" target="_blank">
+        <img src="https://i.ibb.co/wh1zvZ5Q/Whats-App-Image-2025-08-14-at-12-40-25-PM.jpg" alt="Project 16">
+      </a>
+      <a class="project-item" href="https://ibb.co/F4tfC1Cc" target="_blank">
+        <img src="https://i.ibb.co/s9rDz4zc/Whats-App-Image-2025-08-14-at-12-40-26-PM.jpg" alt="Project 17">
+      </a>
+      <a class="project-item" href="https://ibb.co/XkkKF4Nb" target="_blank">
+        <img src="https://i.ibb.co/n88YQ0Zb/Whats-App-Image-2025-08-14-at-12-40-27-PM-1.jpg" alt="Project 18">
+      </a>
+      <a class="project-item" href="https://ibb.co/WvZMFDTS" target="_blank">
+        <img src="https://i.ibb.co/5hmSvY7q/Whats-App-Image-2025-08-14-at-12-40-27-PM.jpg" alt="Project 19">
+      </a>
+      <a class="project-item" href="https://ibb.co/Mx1gcH7D" target="_blank">
+        <img src="https://i.ibb.co/nN1w7yjs/Whats-App-Image-2025-08-14-at-12-40-28-PM-1.jpg" alt="Project 20">
+      </a>
+      <a class="project-item" href="https://ibb.co/fd0Pwxz7" target="_blank">
+        <img src="https://i.ibb.co/XxJvRCrT/Whats-App-Image-2025-08-14-at-12-40-28-PM.jpg" alt="Project 21">
+      </a>
+      <a class="project-item" href="https://ibb.co/7t204X5y" target="_blank">
+        <img src="https://i.ibb.co/v4ZMYHGz/Whats-App-Image-2025-08-14-at-12-40-29-PM-1.jpg" alt="Project 22">
+      </a>
+      <a class="project-item" href="https://ibb.co/jPnkSjxy" target="_blank">
+        <img src="https://i.ibb.co/W4mvLRdk/Whats-App-Image-2025-08-14-at-12-40-29-PM-2.jpg" alt="Project 23">
+      </a>
+      <a class="project-item" href="https://ibb.co/DHmVshP3" target="_blank">
+        <img src="https://i.ibb.co/nN4gZ9qh/Whats-App-Image-2025-08-14-at-12-40-29-PM.jpg" alt="Project 24">
+      </a>
+      <a class="project-item" href="https://ibb.co/r29HB3gW" target="_blank">
+        <img src="https://i.ibb.co/b5tX4Fxf/Whats-App-Image-2025-08-14-at-12-40-30-PM-1.jpg" alt="Project 25">
+      </a>
+      <a class="project-item" href="https://ibb.co/cKC6KhNW" target="_blank">
+        <img src="https://i.ibb.co/fVnkVdC3/Whats-App-Image-2025-08-14-at-12-40-30-PM.jpg" alt="Project 26">
+      </a>
+      <a class="project-item" href="https://ibb.co/HL76ZNyC" target="_blank">
+        <img src="https://i.ibb.co/nqr9p3yB/Whats-App-Image-2025-08-14-at-12-40-31-PM-1.jpg" alt="Project 27">
+      </a>
+      <a class="project-item" href="https://ibb.co/hRHyCLPN" target="_blank">
+        <img src="https://i.ibb.co/nsfbR6Hy/Whats-App-Image-2025-08-14-at-12-40-31-PM-2.jpg" alt="Project 28">
+      </a>
+      <a class="project-item" href="https://ibb.co/0yPPy5cP" target="_blank">
+        <img src="https://i.ibb.co/b5pp5tPp/Whats-App-Image-2025-08-14-at-12-40-31-PM.jpg" alt="Project 29">
+      </a>
+      <a class="project-item" href="https://ibb.co/My3BfKLK" target="_blank">
+        <img src="https://i.ibb.co/HLkhCRQR/Whats-App-Image-2025-08-14-at-12-40-32-PM-1.jpg" alt="Project 30">
+      </a>
+      <a class="project-item" href="https://ibb.co/cWDpnnf" target="_blank">
+        <img src="https://i.ibb.co/b4zy99w/Whats-App-Image-2025-08-14-at-12-40-32-PM.jpg" alt="Project 31">
+      </a>
+      <a class="project-item" href="https://ibb.co/RpYNRQZJ" target="_blank">
+        <img src="https://i.ibb.co/Y7PXHfYV/Whats-App-Image-2025-08-14-at-12-40-33-PM-1.jpg" alt="Project 32">
+      </a>
+      <a class="project-item" href="https://ibb.co/s9MfLfKz" target="_blank">
+        <img src="https://i.ibb.co/B2Sp8pyF/Whats-App-Image-2025-08-14-at-12-40-33-PM-2.jpg" alt="Project 33">
+      </a>
+      <a class="project-item" href="https://ibb.co/WNtBd82d" target="_blank">
+        <img src="https://i.ibb.co/j9R3x0rx/Whats-App-Image-2025-08-14-at-12-40-33-PM-3.jpg" alt="Project 34">
+      </a>
+      <a class="project-item" href="https://ibb.co/PsdTRhqT" target="_blank">
+        <img src="https://i.ibb.co/hxSXkW3X/Whats-App-Image-2025-08-14-at-12-40-34-PM-1.jpg" alt="Project 35">
+      </a>
+      <a class="project-item" href="https://ibb.co/Z6p6Z7bR" target="_blank">
+        <img src="https://i.ibb.co/Kjpj1S8c/Whats-App-Image-2025-08-14-at-12-40-34-PM.jpg" alt="Project 36">
+      </a>
+      <a class="project-item" href="https://ibb.co/5hFcKXFs" target="_blank">
+        <img src="https://i.ibb.co/PGQCDsQ1/Whats-App-Image-2025-08-14-at-12-40-35-PM-1.jpg" alt="Project 37">
+      </a>
+      <a class="project-item" href="https://ibb.co/tMCXG1fW" target="_blank">
+        <img src="https://i.ibb.co/PZCQLVpf/Whats-App-Image-2025-08-14-at-12-40-35-PM-2.jpg" alt="Project 38">
+      </a>
+      <a class="project-item" href="https://ibb.co/4nbFgd0x" target="_blank">
+        <img src="https://i.ibb.co/RkXg4yJW/Whats-App-Image-2025-08-14-at-12-40-35-PM.jpg" alt="Project 39">
+      </a>
+      <a class="project-item" href="https://ibb.co/1f0HBmCY" target="_blank">
+        <img src="https://i.ibb.co/fYXmZx3V/Whats-App-Image-2025-08-14-at-12-40-36-PM.jpg" alt="Project 40">
+      </a>
+    </div>
+
+    <button class="arrow right" aria-label="Scroll right">&#10095;</button>
+  </div>
+
+  <script>
+    (function () {
+      const section  = document.querySelector('#our-projects');
+      const track    = section.querySelector('#projectsTrack');
+      const leftBtn  = section.querySelector('.arrow.left');
+      const rightBtn = section.querySelector('.arrow.right');
+
+      function getStep() {
+        const first = track.querySelector('.project-item');
+        if (!first) return 0;
+        const gap = parseFloat(getComputedStyle(track).gap) || 0;
+        const width = first.getBoundingClientRect().width;
+        return width + gap; // exactly one card per click
+      }
+
+      function scrollExact(dir) {
+        const step = getStep();
+        const max  = track.scrollWidth - track.clientWidth;
+        const target = Math.min(Math.max(0, track.scrollLeft + dir * step), max);
+        track.scrollTo({ left: target, behavior: 'smooth' });
+      }
+
+      function updateArrows() {
+        const max = track.scrollWidth - track.clientWidth - 1;
+        leftBtn.disabled  = track.scrollLeft <= 0;
+        rightBtn.disabled = track.scrollLeft >= max;
+      }
+
+      leftBtn.addEventListener('click', () => { scrollExact(-1); });
+      rightBtn.addEventListener('click', () => { scrollExact(1);  });
+      track.addEventListener('scroll', updateArrows, { passive: true });
+      window.addEventListener('resize', updateArrows);
+      updateArrows();
+    })();
+  </script>
+</section>
+
+
+
+          
+    </div>
+</section>
+
+
+    <!-- PRODUCTS & FEATURES -->
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <ul class="styled-list">
+                <li>➤ Acrylic Letters</li>
+                <li>➤ MS Letters</li>
+                <li>➤ SS Letters</li>
+                <li>➤ Titanium Letters</li>
+                <li>➤ Acrylic Frontlit Letters</li>
+                <li>➤ Doted LED Letters</li>
+                <li>➤ Crystal Letters</li>
+                <li>➤ ACP In Cut Sign Board</li>
+                <li>➤ Liquid Acrylic Letters</li>
+                <li>➤ Clip On Frame</li>
+                <li>➤ Fabric Frame</li>
+            </ul>
+
+            <h2>Features of Our LED Sign Boards</h2>
+            <ul class="styled-list features">
+                <li>✨ Low Power Consumption</li>
+                <li>✨ High Visibility</li>
+                <li>✨ Long-lasting Performance</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p class="contact-subtitle">We’re here to help bring your brand to life</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <a href="mailto:sign@prabhatneon.in">sign@prabhatneon.in</a>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <a href="tel:+919822374236">+91 98223 74236</a> / 
+                    <a href="tel:+919371006460">93710 06460</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Prabhat Neon & LED Sign. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

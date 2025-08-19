@@ -1,0 +1,350 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #0a0a0a;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #000;
+    padding: 15px 0;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.logo-main {
+    color: #ffea00;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0 0 5px #ffea00;
+}
+.logo-sub {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 5px;
+    text-shadow: 0 0 5px #fff;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* HERO */
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('https://i.ibb.co/zVJTFfYz/pexels-allen-boguslavsky-1344061-30526177.jpg') center/cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.48), rgba(0,0,0,0.36));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 30px 40px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.45); /* transparent box behind text */
+}
+
+/* Neon company name */
+.company-name {
+  margin-bottom: 10px;
+  color: #ff7be5;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  text-shadow:
+    0 0 8px rgba(255,123,229,0.9),
+    0 0 20px rgba(168,85,247,0.8),
+    0 0 38px rgba(168,85,247,0.6);
+}
+
+/* Slogan */
+.slogan {
+  color: #ffd9f7;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  text-shadow: 0 0 6px rgba(255,123,229,0.45);
+}
+
+/* MOBILE SCALING */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 20px;
+  }
+  .company-name {
+    font-size: clamp(1.8rem, 8vw, 3.5rem);
+  }
+  .slogan {
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+  }
+}
+
+
+/* ABOUT */
+#about {
+    padding: 70px 20px;
+    background: #111;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+#about h2 {
+    color: #ffea00;
+    text-shadow: 0 0 8px #ffea00;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#about .since {
+    display: inline-block;
+    background: #ffea00;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#about p {
+    color: #eee;
+    max-width: 750px;
+    margin: 15px auto;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#about p strong {
+    color: #ffea00;
+    text-shadow: 0 0 5px #ffea00;
+}
+#our-projects {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* === OUR PROJECTS SECTION === */
+/* Our Projects Section */
+.our-projects {
+    padding: 60px 20px;
+    background: #001f3f; /* Dark Blue */
+    text-align: center;
+    color: white;
+}
+
+.our-projects h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.our-projects h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ffcc00;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Horizontal scroll container */
+.project-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #ffcc00 transparent;
+}
+
+.project-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.project-scroll::-webkit-scrollbar-thumb {
+    background: #ffcc00;
+    border-radius: 4px;
+}
+
+/* Project cards */
+.project-item {
+    background: #012a5a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    flex: 0 0 auto;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* PRODUCTS */
+#products {
+    padding: 70px 20px;
+    background: #0d0d0d;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#products h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffea00;
+    text-shadow: 0 0 8px #ffea00;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.styled-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.styled-list li {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.styled-list li:hover {
+    background: rgba(255, 255, 0, 0.1);
+    transform: translateX(5px);
+}
+
+.features li {
+    font-weight: bold;
+    color: #ffea00;
+    text-shadow: 0 0 5px #ffea00;
+}
+
+/* CONTACT */
+.contact-section {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ff0080;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(255, 0, 128, 0.2);
+}
+
+.contact-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.contact-item a {
+  color: #ff80c0;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
